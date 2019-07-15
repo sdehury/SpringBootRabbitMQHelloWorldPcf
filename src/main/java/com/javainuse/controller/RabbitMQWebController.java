@@ -10,7 +10,7 @@ import com.javainuse.model.Employee;
 import com.javainuse.service.RabbitMQSender;
 
 @RestController
-@RequestMapping(value = "/javainuse-rabbitmq/")
+@RequestMapping(value = "/javainuse-rabbitmq")
 public class RabbitMQWebController {
 
 	@Autowired
