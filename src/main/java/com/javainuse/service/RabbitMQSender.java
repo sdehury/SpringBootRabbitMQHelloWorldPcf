@@ -17,8 +17,7 @@ public class RabbitMQSender {
 	private String exchange;
 	
 	@Value("${javainuse.rabbitmq.routingkey}")
-	private String routingkey;	
-	String kafkaTopic = "java_in_use_topic";
+	private String routingkey;
 	
 	public void send(Employee company) {
 		amqpTemplate.convertAndSend(exchange, routingkey, company);

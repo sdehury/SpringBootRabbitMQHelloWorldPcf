@@ -24,6 +24,8 @@ public class RabbitMQWebController {
 	emp.setEmpName(empName);
 		rabbitMQSender.send(emp);
 
+		System.out.println("Sending ..........................producer");
+
 		return "Message sent to the RabbitMQ JavaInUse Successfully";
 	}
 

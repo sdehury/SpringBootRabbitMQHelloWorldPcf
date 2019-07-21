@@ -1,8 +1,7 @@
 ---
 applications:
-- name: SpringBootRabbitMQHelloWorldPcf
+- name: spring-mq-service
   instances: 1
-  host: SpringBootRabbitMQHelloWorldPcf
   path: target/SpringBootRabbitMQHelloWorld-0.0.1-SNAPSHOT.jar
   services:
     - rabbitmqservice
